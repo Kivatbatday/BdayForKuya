@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'TrajanProBold';
+    src: url('../Assets/Fonts/Trajan\ Pro\ Bold.ttf') format('truetype');
+  }
+
+html{
+    background-image: url("../Assets/greyfade.jpg");
+}
+
+.header{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.header img{
+    height: 40px;
+    width: auto;
+}
+
+.header p{
+    font-family: 'TrajanProBold', Arial, sans-serif;
+    letter-spacing: 2.5px;
+    font-size: 30px;
+}
