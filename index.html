@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="./CSS/homepage.css" />
   </head>
 
+  <script>
+    function toggleContainer(element) {
+      const details = element.nextElementSibling;
+      if (details.style.display === "block") {
+        details.style.display = "none";
+      } else {
+        details.style.display = "block";
+      }
+    }
+  </script>
+
   <body>
     <div class="header">
       <img src="./Assets/kivatbatDp.jpg" alt="KivatbatDP" />
@@ -21,11 +32,48 @@
     </div>
 
     <div class="body">
-      <div class="onLoopGif">
-        
+      <div class="onLoopGifContainer">
+        <div class="bdayCakeBlowContainer">
+          <video
+            class="bdayCakeBlowVid"
+            width="600"
+            height="400"
+            autoplay
+            loop
+            muted
+          >
+            <source src="./Assets/bdayCakeBlow.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="bdaygreetContainer">
+            <h2 class="bdaygreet">Happy @thatsoravenn day!</h2>
+          </div>
+        </div>
       </div>
-      <h1>Welcome to My Website</h1>
-      <p>This is a simple template with a background image.</p>
+      <div class="aboutRaven">
+        <h3 class="aboutHim">Raven appreciation wall</h3>
+        <h2>DOTA Best Picks</h2>
+        <div class="bestPickContainer">
+          <div class="invokerContainer">
+            <p class="heroName" onclick="toggleContainer(this)">Invoker</p>
+            <div class="heroDetails">
+              <img src="./Assets/invoker.png" />
+            </div>
+          </div>
+          <div class="beastMasterContainer">
+            <p class="heroName" onclick="toggleContainer(this)">Beast Master</p>
+            <div class="heroDetails">
+              <img src="./Assets/beastmaster.png" />
+            </div>
+          </div>
+          <div class="earthshakerContainer">
+            <p class="heroName" onclick="toggleContainer(this)">Earth Shaker</p>
+            <div class="heroDetails">
+              <img src="./Assets/earthshaker.png" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -6,7 +6,93 @@ html{
     border-bottom: 3px solid #ff6046;
 }
 
-.onLoopGif{
+.onLoopGifContainer {
     width: 100%;
-    
+    font-size: 80px;
+    font-weight: bolder;
+    font-family: 'Gill Sans';
+    display: flex;
 }
+
+.bdaygreetContainer{
+    position: absolute;
+    width: -webkit-fill-available;
+    bottom: 0;
+    margin-bottom: 40px;
+}
+
+.bdayCakeBlowContainer {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    margin-top: -70px;
+    z-index: 5;
+}
+
+.bdayCakeBlowVid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 50px);
+    clip-path: inset(0 0 150px 0);
+    object-fit: cover; 
+    opacity: 0.15;
+}
+
+.aboutRaven{
+    width: 100%;
+    background-color: black;
+    margin-top: -100px;
+    padding-bottom: 100px;
+}
+
+.aboutHim, .bestPickContainer{
+    padding: 20px;
+    display: flex;
+}
+
+.aboutHim{
+    padding-top: 100px;
+}
+
+.bestPickContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px;
+}
+
+.invokerContainer, .beastMasterContainer, .earthshakerContainer{
+    flex: 1;
+    padding: 10px;
+    border: solid sienna 4px;
+    margin: 0 5px;
+    box-sizing: border-box;
+}
+
+.invokerContainer{
+    border: solid sienna 4px;
+}
+
+.beastMasterContainer{
+    border: solid sienna 4px;
+}
+
+.earthshakerContainer{
+    border: solid sienna 4px;
+}
+
+.heroName{
+    cursor: pointer;
+}
+.heroDetails {
+    display: none;
+}
+.bestPickContainer img{
+    max-width: 400px;
+    min-width: 200px;
+    height: auto;
+    padding-top: 10px;
+}
+
