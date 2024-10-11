@@ -1,3 +1,7 @@
 html{
     background-image: url("../Assets/greyfade.jpg");
 }
+
+.header .navBar .nb-greetings {
+    border-bottom: 3px solid #ff6046;
+}

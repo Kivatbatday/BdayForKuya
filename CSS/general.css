@@ -64,15 +64,17 @@
     right: 30px;
 }
 
-.nav-button {
+.nb-home, .nb-greetings,.nb-dev {
     color: white;
     padding: 8px 13px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
     transition: background-color 0.3s, outline 0.3s;
 }
 
-.nav-button:hover {
+.nb-home:hover,
+.nb-greetings:hover,
+.nb-dev:hover {
     background-color: rgba(244, 244, 244, .2);
     backdrop-filter: blur(10px);
     outline: 2px solid rgba(255, 255, 255, .6);
